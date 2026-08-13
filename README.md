@@ -32,7 +32,8 @@ Now get your ass to (website), or get back to work.
 ### Build your own local copy:
 (intro)
 #### Prerequisites:
-(prereqs.)
+*  Web Browser.
+*  Gemini API Key.
 
 ```
 Instructions
