@@ -1,6 +1,8 @@
 # BeNice
 Thats literally it.
+
 Be nice, don't get fired.
+
 Otherwise, you won't have a job, nor will you find one.
 
 ## Why Should I Bother With This BeNice Thing???
@@ -19,6 +21,8 @@ We both know we absolutely don't give a flying fuck that they want point A done 
 BeNice Translates those too.
 
 Now get your ass to (website), or get back to work.
+
+Oh right, I forgot to say, we don't give two shits about what you say to your boss. We don't store your useless data.
 
 ## Features:
 
