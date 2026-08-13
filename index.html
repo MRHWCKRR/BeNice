@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeNice</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossoriginn>
+    <link href=></head>
 <body>
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <h1>BeNice</h1>
+                <span class="tag">Don't send your BS</span>
+            </div>
+            <div class="memo-meta">
+                RE: Completely Honest Translations.
+                STATUS: UNFILTERED.
+            </div>
+        </header>
+
+        <div class="mode-row">
+            <div class="mode-toggle" id="mode-toggle">
+                <div class="thumb"></div>
+                <button type="button" class="active" data-mode="decode">Decode</button>
+                <button type="button" data-mode="encode">Encode</button>
+            </div>
+            <div class="mode-hint" id="modeHint">Paste your corporate bs here. Get the honest plain english version.</div>
+        </div>
+
+        <!-- the coorporate bs intro -->
+
+        <div class="memo">
+            <div class="divider"></div>
+            <div class="pane pane-left">
+                <div class="pane-label"><span id="left-label">Corporate email</span></div>
+                <textarea id="inputText" placeholder="Corporate Bullshit..."></textarea>
+            </div>
+            <div class="pane pane-right">
+                <div class="pane-label"><span id="leftLabel">What they actully mean</span></div>
+                <div class="stamp-badge" id="stampBadge">Honest</div>
+                <div class="output-body" id="outputText" data-placeholder="Translated stuff is here"></div>
+            </div>
+        </div>
+
+        <!-- Copy, translate buttons what not -->
+
+        <footer class="actions">
+            <span class="chat-count" id="charCount">0 Characters</span>
+            <div class="action-buttons">
+                <button type="button" class="copy-btn" id="copyBtn" disabled>Copy</button>
+                <button type="button" class="translate-btn" id="translateBtn">Translate</button>
+            </div>
+        </footer>
+
+        <div class="examples">
+            <span class="lbl">Try:</span>
+            <span class="example-chip" data-mode="decode" data-text="I just want to touch base and make sure we all agree on the idea before we start the project">Example 1</span>
+            <span class="example-chip" data-mode="encode" data-text="I am NOT doing this bullshit over the weekend, I have a life too you know">Example 2</span>
+            <span class="example-chip" data-mode="encode" data-text="Oh my fucking days you're wasting so much time and resources. This 10 minute meeting could have been done online.">Example 2</span>
+        </div>
+    </div>
     
 </body>
 </html>
