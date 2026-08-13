@@ -51,3 +51,20 @@ modeButtons.forEach(btn => {
         applyMode();
     });
 });
+
+function updateCharCount() {
+    const count = inputText.value.length;
+    charCount.textContent = count + ' ' + (count === 1 ? 'character' : 'characters');
+}
+inputText.addEventListener('input', updateCharCount);
+updateCharCount();
+
+document.querySelectorAll('.example-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+        mode = chip.dataset.mode;
+        applyMode();
+        inputText.value = chip.dataset.text;
+        updateCharCount();
+        inputText.focus();
+    });
+});

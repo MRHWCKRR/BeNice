@@ -278,7 +278,7 @@ footer.actions {
     flex-wrap: wrap;
 }
 
-.chat-count {
+.char-count {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 12px;
     color: var(--ink-soft);
