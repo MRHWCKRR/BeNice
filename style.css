@@ -1,0 +1,17 @@
+:root {
+    --paper: #EDE8D8;
+    --paper-dark: #D9D0C4;
+    
+    --ink: #232A3B;
+    --ink-soft: #5F6B7A;
+    
+    --stamp: #D8B8A8;      /* Warm terracotta/clay */
+    --stamp-dark: #A67B6E;
+    
+    --sage: #9BA89C;       /* Muted greeny-gray */
+    --sage-dark: #6B7567;
+    
+    --line: #E8E1D5;       /* Lighter version of paper-dark */
+    --highlight: #FFF5E6; /* Warm ivory for highlights/focus */
+    --paper-shadow: rgba(35, 42, 59, 0.08); /* Soft ink shadow */
+}
