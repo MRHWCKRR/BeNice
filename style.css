@@ -15,3 +15,99 @@
     --highlight: #FFF5E6; /* Warm ivory for highlights/focus */
     --paper-shadow: rgba(35, 42, 59, 0.08); /* Soft ink shadow */
 }
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: var(--paper-dark);
+    background-image: linear-gradient(var(--line) 1px, transparent 1px);
+    background-size: 100% 32px;
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px 80px;
+}
+
+.wrap {
+    max-width: 90px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 12px
+}
+
+.brand {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+}
+
+.brand h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: 34px;
+    margin: 0;
+    letter-spacing: 1px;
+    color: var(--ink);
+}
+
+.brand .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-left: 2px solid var(--line);
+    padding-left: 12px;
+}
+
+.memo-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    text-align: right;
+    line-height: 1.7;
+}
+
+.mode-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.mode-toggle {
+    position: relative;
+    display: inline-flex;
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    padding: 4px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.mode-toggle button {
+    position: relative;
+    z-index: 2;
+    border: none;
+    background: transparent;
+    padding: 9px 22px;
+    cursor: pointer;
+    font: inherit;
+    color: var(--ink-soft);
+    border-radius: 999px;
+    transition: color 0.25s ease;
+    white-space: nowrap;
+}
