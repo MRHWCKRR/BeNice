@@ -90,7 +90,7 @@ header {
     flex-wrap: wrap;
 }
 
-.mode-toggle {
+.modeToggle {
     position: relative;
     display: inline-flex;
     background: var(--paper);
@@ -103,7 +103,7 @@ header {
     text-transform: uppercase;
 }
 
-.mode-toggle button {
+.modeToggle button {
     position: relative;
     z-index: 2;
     border: none;
@@ -117,16 +117,17 @@ header {
     white-space: nowrap;
 }
 
-.mode-toggle button:hover {
+.modeToggle button:hover {
     color: var(--ink);
 }
 
-.mode-toggle button.active {
+.modeToggle button.active {
     color: var(--paper);
     font-weight: 600;
 }
 
-.mode-toggle .thumb {
+/* Default position for decode (first button active) */
+.modeToggle .thumb {
     position: absolute;
     top: 4px;
     left: 4px;
@@ -139,7 +140,8 @@ header {
     pointer-events: none;
 }
 
-.mode-toggle button:last-of-type.active ~ .thumb {
+/* Move thumb when second button (encode) is active */
+.modeToggle button[data-mode="encode"].active ~ .thumb {
     left: calc(50% + 4px);
 }
 

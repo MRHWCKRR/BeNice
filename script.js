@@ -47,6 +47,7 @@ modeButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         if (btn.dataset.mode === mode) return;
         mode = btn.dataset.mode;
+        modeToggle.classList.toggle('encode', mode === 'encode');
         applyMode();
     });
 });
